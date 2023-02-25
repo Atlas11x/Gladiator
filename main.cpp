@@ -4,34 +4,7 @@
 
 using namespace std;
 
-void get_result_arr(int *_array, int _size, int _health, int _experience, int _experience_weapon, int _smart, int _mood){
-    _array[0] = _health;
-    _array[1] = _experience;
-    _array[2] = _experience_weapon;
-    _array[3] = _smart;
-    _array[4] = _mood;
-    _array[5] = 0;
-    _array[6] = 0;
-
-}
-
-int arr_summ(int *_massiv, int _size){
-    int result = 0;
-    printf("arr_summ start %d\n", _massiv[0]);
-    for (int i = 0; i < _size; ++i){
-        printf("%d\n",_massiv[i]);
-        result += _massiv[i];
-    }
-    return result;
-}
-
-
 int main(){
-    int array_sum_Dottle[7];
-
-//    void get_total_score(massiv, helth, exp, smart, mood){
-
-//    }
 
     //dottle_health
     //dottle_experience
@@ -144,10 +117,6 @@ int main(){
 
     int muhad_arm_hook_damage = muhad_arm_hook_condition*muhad_arm_hook_power;
     printf("%d\n", muhad_arm_hook_damage);
-
-
-    const int arr_sum_muhad_size = 7;
-    int arr_sum_muhad[arr_sum_muhad_size];
 
     printf("arr_sum_muhad[3] %d: \n", arr_sum_muhad[3]);
     get_result_arr(&arr_sum_muhad[0], arr_sum_muhad_size, muhad.health, muhad.experience, muhad.experience_weapon, muhad.smart, muhad.mood);

@@ -12,6 +12,11 @@ struct Unit_game{
     int armor_protection;
 };
 
+const int arr_sum_muhad_size = 7;
+int arr_sum_muhad[arr_sum_muhad_size];
+
+int arr_summ(int *_massiv, int _size);
+void get_result_arr(int *_array, int _size, int _health, int _experience, int _experience_weapon, int _smart, int _mood);
 void change_variable(int *_var);
 void get_health(int *_health);
 void get_exp(int *_exp);
