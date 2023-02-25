@@ -1,0 +1,4 @@
+#ifndef PROPERTY_UNIT_H
+#define PROPERTY_UNIT_H
+
+#endif // PROPERTY_UNIT_H

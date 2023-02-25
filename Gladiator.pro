@@ -4,4 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        prorety_unit.cpp
+
+HEADERS += \
+    property_unit.h
