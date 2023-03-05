@@ -1,5 +1,36 @@
 #include "property_unit.h"
 
+void init_array(int *_array, int _size)
+{
+    _array[0] = 0;
+
+    for (int i = 0; i > _size; i++)
+    {
+        _array[i] = 0;
+    }
+}
+
+//create 3 structures;
+//create 3 functions for modificate data in structures;
+//min function;
+//function init array;
+//*create more functions and structures;
+
+void edit_struct(engine *plane)
+{
+    plane->height = 3;
+    plane->long_ = 5;
+    plane->rpm = 7000;
+}
+
+
+void foo_improve(Unit_game *_player)
+{
+    _player->health = -1000;
+    _player->experience = -1000;
+    _player->smart = -1000;
+}
+
 void get_result_arr(int *_array, int _size, int _health, int _experience, int _experience_weapon, int _smart, int _mood){
         _array[0] = _health;
         _array[1] = _experience;
@@ -20,27 +51,6 @@ int arr_summ(int *_massiv, int _size){
     return result;
 }
 
-Unit_game dottle; //Объект с характеристиками игрока Dottle
-
-dottle.health = 100;
-dottle.experience = 0;
-dottle.experience_weapon = 0;
-dottle.like_counter = 43;
-dottle.smart = 0;
-dottle.mood = 56;
-dottle.armor_protection = 47;
-//---------------------------------------------------------
-
-Unit_game muhad; //Объект с характеристиками игрока muhad
-
-muhad.health = 40;
-muhad.experience = -1;
-muhad.experience_weapon = -5;
-muhad.like_counter = -6;
-muhad.smart = -100;
-muhad.mood = 0;
-muhad.armor_protection = 100;
-//---------------------------------------------------------
 
 void change_variable(int* _var){
     printf("%p \n", _var);

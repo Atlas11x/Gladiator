@@ -1,12 +1,31 @@
 #include <iostream>
 #include <stdio.h>
+#include <string.h>
 #include "property_unit.h"
+#include "min_max.h"
 
-using namespace std;
 
 int main(){
+    int arr[3];
+    arr[0] = 3;
+    arr[1] = -1;
+    arr[2] = 999;
 
-    //dottle_health
+    int result = get_max_from_array(&arr[0], 3);
+    printf("result = %d\n\n", result);
+
+    Unit_game pl3;
+
+    pl3.health = 100;
+    pl3.experience = 50;
+    pl3.smart = 1;
+
+    foo_improve(&pl3);
+    printf("health: %d\n", pl3.health);
+    printf("experience: %d\n", pl3.experience);
+    printf("smart: %d\n", pl3.smart);
+
+    void init_array(int *_array, int _size);//dottle_health
     //dottle_experience
     //dottle_experience_weapon
     //dottle_like_counter
@@ -26,6 +45,10 @@ int main(){
     //muhad_arm_hook_damage
 
     //=========================
+    const int arr_sum_muhad_size = 7;
+    int arr_sum_muhad[arr_sum_muhad_size];
+
+    init_array(&arr_sum_muhad[0], 7);
 
     Unit_game dottle; //Объект с характеристиками игрока Dottle
 
@@ -36,6 +59,8 @@ int main(){
     dottle.smart = 0;
     dottle.mood = 56;
     dottle.armor_protection = 47;
+
+
     //---------------------------------------------------------
 
     Unit_game muhad; //Объект с характеристиками игрока muhad
@@ -126,6 +151,7 @@ int main(){
     printf("arr_sum_muhad[6] %d: \n", arr_sum_muhad[8]);
     int res = arr_summ(&arr_sum_muhad[0], arr_sum_muhad_size);
     printf("res %d: \n", res);
+
 
     return 0;
 }
