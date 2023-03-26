@@ -1,4 +1,5 @@
 #include "property_unit.h"
+#include "Arandom.h"
 
 void init_array(int *_array, int _size)
 {
@@ -16,12 +17,6 @@ void init_array(int *_array, int _size)
 //function init array;
 //*create more functions and structures;
 
-void edit_struct(engine *plane)
-{
-    plane->height = 3;
-    plane->long_ = 5;
-    plane->rpm = 7000;
-}
 
 
 void foo_improve(Unit_game *_player)
@@ -49,6 +44,65 @@ int arr_summ(int *_massiv, int _size){
         result += _massiv[i];
     }
     return result;
+}
+
+int battle()
+{
+    int _count = 8;
+    bool activate = 0;
+    while (1)
+    {
+//        for (int i=0;i>_count-1;++i)
+//        {
+//            activate = get_random_value(0, 1);
+//            if (activate == 1){
+
+//            }
+//        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_health();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_exp();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_exp_weapon();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_like_counter();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_smart();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_mood();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_arm_protection();
+        }
+        activate = get_random_value(0, 1);
+        if (activate == 1)
+        {
+            get_arm_protection_condition();
+        }
+
+    }
+
+    return 0;
 }
 
 

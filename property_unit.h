@@ -1,6 +1,7 @@
 #ifndef PROPERTY_UNIT_H
 #define PROPERTY_UNIT_H
 #include <stdio.h>
+#include "Arandom.h"
 
 struct Unit_game{
     int health;
@@ -18,16 +19,15 @@ struct Unit_game{
 //    int version;
 //};
 
-struct engine{
-    int rpm;
-    int height;
-    int long_;
-};
+//struct engine{
+//    int rpm;
+//    int height;
+//    int long_;
+//};
 
-engine plane;
+//engine plane;
 
 
-void edit_struct(engine *plane);
 
 void init_array(int *_array, int _size);
 
