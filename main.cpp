@@ -3,9 +3,11 @@
 #include <string.h>
 #include "property_unit.h"
 #include "min_max.h"
+#include "Arandom.h"
 
 
 int main(){
+/*
     int arr[3];
     arr[0] = 3;
     arr[1] = -1;
@@ -13,19 +15,20 @@ int main(){
 
     int result = get_max_from_array(&arr[0], 3);
     printf("result = %d\n\n", result);
+*/
 
-    Unit_game pl3;
+//    Unit_game pl3;
 
-    pl3.health = 100;
-    pl3.experience = 50;
-    pl3.smart = 1;
+//    pl3.health = 100;
+//    pl3.experience = 50;
+//    pl3.smart = 1;
 
-    foo_improve(&pl3);
-    printf("health: %d\n", pl3.health);
-    printf("experience: %d\n", pl3.experience);
-    printf("smart: %d\n", pl3.smart);
+//    foo_improve(&pl3);
+//    printf("health: %d\n", pl3.health);
+//    printf("experience: %d\n", pl3.experience);
+//    printf("smart: %d\n", pl3.smart);
 
-    void init_array(int *_array, int _size);//dottle_health
+//    void init_array(int *_array, int _size);//dottle_health
     //dottle_experience
     //dottle_experience_weapon
     //dottle_like_counter
@@ -55,7 +58,7 @@ int main(){
     dottle.health = 100;
     dottle.experience = 0;
     dottle.experience_weapon = 0;
-    dottle.like_counter = 43;
+    dottle.like_counter = 20;
     dottle.smart = 0;
     dottle.mood = 56;
     dottle.armor_protection = 47;
